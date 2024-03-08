@@ -10,7 +10,7 @@
 
 let impuestousa = 1.08;
 let impuestomxn = 1.16;
-let preciodlls = 17.20;
+let preciodlls = 17.10;
 
 function operacion() {
    var Preciodlls = document.getElementById("preciodlls");
