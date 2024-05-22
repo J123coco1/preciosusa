@@ -11,6 +11,7 @@
 let impuestousa = 1.08;
 let impuestomxn = 1.16;
 let preciodlls = 17.10;
+let isr = 1.02;
 
 function operacion() {
    var Preciodlls = document.getElementById("preciodlls");
@@ -28,14 +29,16 @@ function operacion() {
    let precioimpuestomxn = preciomxn * impuestomxn;
    console.log("Precio con impuesto de MXN: " + precioimpuestomxn);
 
+
    // Eliminé la línea que solicitaba el porcentaje de ganancia, ya que ya se obtiene como input
    // let porcentajeGanancia = prompt("Cuanto porcentaje desean agregar de ganancias:");
 
    let ganancia = 1 + porcentajeGanancia / 100;
 
    let preciofinal = precioimpuestomxn * ganancia;
-   console.log("El precio final a dar el producto es: " + preciofinal.toFixed(2));
-   alert("El precio final a dar el producto es: " + preciofinal.toFixed(2));
+   let precioconisr = preciofinal * isr;
+   console.log("El precio final a dar el producto es: " + precioconisr.toFixed(2));
+   alert("El precio final a dar el producto es: " + precioconisr.toFixed(2));
 }
 
 
