@@ -11,7 +11,7 @@
 let impuestousa = 1.08;
 let impuestomxn = 1.16;
 let preciodlls = 17.00;
-let isr = 1.02;
+let isr = 1.025;
 
 function operacion() {
    var Preciodlls = document.getElementById("preciodlls");
